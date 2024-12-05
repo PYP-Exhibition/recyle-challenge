@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycle Challenge App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>♻️ Recycle Challenge App 🌍</h1>
+        <p>Transform trash into treasure and save the planet with us!</p>
+        <nav>
+            <ul>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#challenge">Challenge</a></li>
+                <li><a href="#handmedowns">Hand Me Downs</a></li>
+                <li><a href="#paintings">Painting Selling</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="signup">
+        <h2>Sign Up Now</h2>
+        <p>Join our recycle challenge and make a difference!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option value="individual">Individual</option>
+                <option value="organization">Organization</option>
+            </select>
+
+            <button type="button" onclick="signUp()">Sign Up</button>
+        </form>
+    </section>
+
+    <section id="challenge">
+        <h2>Recycle Challenge ♻️</h2>
+        <p>Turn your trash into beautiful creations or donate items!</p>
+        <p>Cost: 10 AED to 556 AED</p>
+        <p>Rewards: Tokens for product discounts</p>
+        <button onclick="learnMore()">Learn More</button>
+    </section>
+
+    <section id="handmedowns">
+        <h2>Hand Me Downs 👜</h2>
+        <p>Explore second-hand items at great prices.</p>
+        <button onclick="browseItems()">Browse Items</button>
+    </section>
+
+    <section id="paintings">
+        <h2>Painting Selling 🎨</h2>
+        <p>Buy unique art made from recycled materials.</p>
+        <button onclick="viewPaintings()">View Paintings</button>
+    </section>
+
+    <section id="rewards">
+        <h2>🎁 Rewards System</h2>
+        <p>Earn tokens for participating in challenges and exchanging eco-products.</p>
+        <button onclick="checkTokens()">Check My Tokens</button>
+    </section>
+
+    <footer>
+        <p>© 2024 Recycle Challenge App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
